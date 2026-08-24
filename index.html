@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="ADALA — a clear support, safety and wellbeing platform for girls and women across the Arab region.">
+<title>ADALA — Support. Guidance. Connection.</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
+</head>
+
+<body>
+
+<!-- PAGE LOADER -->
+<div class="loader" id="pageLoader">
+  <div>
+    <div class="loader-logo">ADALA</div>
+    <div class="loader-line"></div>
+    <p>Support. Guidance. Connection.</p>
+    <span></span>
+  </div>
+</div>
+
+
+<!-- HEADER -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+
+    <a class="brand" href="#home" aria-label="ADALA home">
+      <span class="brand-mark"><img src="assets/adala-logo.png" alt="ADALA logo" onerror="this.style.display='none'; this.nextElementSibling?.classList.add('logo-fallback-visible')"></span>
+
+      <span class="brand-text">
+        <strong>ADALA</strong>
+        <small>Support. Guidance. Connection.</small>
+      </span>
+    </a>
+
+    <nav class="nav" id="mainNavigation" aria-label="Main navigation">
+
+      <a href="#home" data-i18n="navHome">
+        Home
+      </a>
+
+      <a href="#support" data-i18n="navSupport">
+        Find Support
+      </a>
+
+      <a href="#explore" data-i18n="navExplore">
+        Explore
+      </a>
+
+      <a href="#rights" data-i18n="navRights">
+        The Law
+      </a>
+
+      <a href="#tools" data-i18n="navToolkit">
+        Toolkit
+      </a>
+
+      <a href="#resources" data-i18n="navResources">
+        Resources
+      </a>
+
+      <a href="#about" data-i18n="navAbout">
+        About
+      </a>
+
+    </nav>
+
+    <div class="header-actions">
+
+      <button
+        class="language-button"
+        id="languageButton"
+        type="button"
+      >
+        <span id="languageMark">AR</span>
+        <b id="languageLabel">العربية</b>
+      </button>
+
+      <button
+        class="menu-button"
+        id="menuButton"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        <i></i>
+        <i></i>
+        <i></i>
+      </button>
+
+    </div>
+
+  </div>
+</header>
+
+
+<main>
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="hero" id="home">
+
+  <div class="hero-orb orb-one"></div>
+  <div class="hero-orb orb-two"></div>
+
+  <div class="hero-star">
+    ✦
+  </div>
+
+  <div class="container hero-grid">
+
+    <div class="hero-copy">
+
+      <span class="eyebrow">
+        <em></em>
+
+        <span data-i18n="heroKicker">
+          ADALA · ARAB REGION
+        </span>
+      </span>
+
+      <h1>
+
+        <span data-i18n="heroTitle">
+          Where are you?
+        </span>
+
+        <span
+          class="hero-ar"
+          data-i18n="heroArabic"
+        >
+          أين أنتِ؟
+        </span>
+
+      </h1>
+
+      <p data-i18n="heroText">
+        Choose your country to find emergency numbers,
+        trusted support contacts and official resources
+        in one clear place.
+      </p>
+
+
+      <div class="hero-actions">
+
+        <a
+          class="btn btn-primary"
+          href="#support"
+        >
+          <span data-i18n="findSupport">
+            Find support
+          </span>
+
+          <b>→</b>
+        </a>
+
+
+        <button
+          class="btn btn-secondary"
+          id="heroCalmButton"
+        >
+
+          <span>✦</span>
+
+          <span data-i18n="takeMoment">
+            Take a moment
+          </span>
+
+        </button>
+
+      </div>
+
+
+      <div class="hero-trust">
+
+        <span>
+          ✓
+          <span data-i18n="trustOne">
+            Official resources
+          </span>
+        </span>
+
+        <span>
+          ✦
+          <span data-i18n="trustTwo">
+            22 Arab countries
+          </span>
+        </span>
+
+        <span>
+          ↗
+          <span data-i18n="trustThree">
+            Simple to use
+          </span>
+        </span>
+
+      </div>
+
+    </div>
+
+
+    <div class="hero-card">
+
+      <div class="hero-card-glow"></div>
+
+      <div class="hero-logo-card">
+
+        <span class="hero-logo-mark"><img src="assets/adala-logo.png" alt="ADALA logo" onerror="this.style.display='none'; this.nextElementSibling?.classList.add('logo-fallback-visible')"></span>
+
+        <div>
+
+          <strong>
+            ADALA
+          </strong>
+
+          <small>
+            Support · Guidance · Connection
+          </small>
+
+          <small class="arabic">
+            دعم · إرشاد · تواصل
+          </small>
+
+        </div>
+
+      </div>
+
+
+      <div class="hero-card-note">
+
+        <span>✦</span>
+
+        <div>
+
+          <b data-i18n="heroCardTitle">
+            A clearer path to support.
+          </b>
+
+          <p data-i18n="heroCardText">
+            Start with your country, then choose the
+            kind of help or information you need.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     FIND SUPPORT / COUNTRY MAP
+========================================================= -->
+
+<section
+  class="support section"
+  id="support"
+>
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div>
+
+        <span
+          class="kicker"
+          data-i18n="regionKicker"
+        >
+          ARAB REGION
+        </span>
+
+        <h2 data-i18n="chooseCountry">
+          Choose your country.
+        </h2>
+
+        <p data-i18n="chooseText">
+          Tap a country on the map or choose it from
+          Quick Access.
+        </p>
+
+      </div>
+
+
+      <div class="country-count">
+
+        <i></i>
+
+        <strong>
+          22
+        </strong>
+
+        <span data-i18n="countries">
+          countries
+        </span>
+
+      </div>
+
+    </div>
+
+
+    <div class="explorer">
+
+      <!-- COUNTRY SIDEBAR -->
+
+      <aside class="country-sidebar">
+
+        <div class="sidebar-head">
+
+          <span
+            class="kicker"
+            data-i18n="quickAccess"
+          >
+            QUICK ACCESS
+          </span>
+
+          <h3 data-i18n="findCountry">
+            Find your country
+          </h3>
+
+        </div>
+
+
+        <label class="search">
+
+          <span>
+            ⌕
+          </span>
+
+          <input
+            id="countrySearch"
+            type="search"
+            data-i18n-placeholder="searchPlaceholder"
+            placeholder="Search country..."
+          >
+
+          <button
+            id="clearSearch"
+            type="button"
+          >
+            ×
+          </button>
+
+        </label>
+
+
+        <div
+          class="country-list"
+          id="countryList"
+        ></div>
+
+
+        <p
+          class="no-results"
+          id="noResults"
+          hidden
+          data-i18n="noResults"
+        >
+          No country found.
+        </p>
+
+      </aside>
+
+
+      <!-- MAP -->
+
+      <div class="map-panel">
+
+        <div class="map-head">
+
+          <div>
+
+            <span
+              class="kicker"
+              data-i18n="mapKicker"
+            >
+              ARAB REGION
+            </span>
+
+            <small data-i18n="mapHint">
+              Select a country to view its information
+            </small>
+
+          </div>
+
+
+          <span class="map-status">
+
+            <i></i>
+
+            <span
+              id="selectedMapName"
+              data-i18n="mapSelectHint"
+            >
+              Tap a country
+            </span>
+
+          </span>
+
+        </div>
+
+
+        <div class="map-stage">
+
+          <div class="map-watermark">
+            ADALA
+          </div>
+
+          <div class="map-rings ring-a"></div>
+          <div class="map-rings ring-b"></div>
+
+
+          <div class="map-controls">
+
+            <button
+              id="mapZoomIn"
+              type="button"
+              aria-label="Zoom in"
+            >
+              +
+            </button>
+
+            <button
+              id="mapZoomOut"
+              type="button"
+              aria-label="Zoom out"
+            >
+              −
+            </button>
+
+            <button
+              id="mapReset"
+              type="button"
+              aria-label="Reset map"
+            >
+              ↻
+            </button>
+
+          </div>
+
+
+          <svg
+            class="arab-map"
+            id="arabMap"
+            viewBox="0 0 1200 620"
+            role="img"
+            aria-label="Interactive map of the Arab region"
+          ></svg>
+
+
+          <div class="map-legend">
+
+            <span>
+
+              <i class="legend-dot"></i>
+
+              <span data-i18n="legendCountry">
+                Arab country
+              </span>
+
+            </span>
+
+
+            <span>
+
+              <i class="legend-dot selected"></i>
+
+              <span data-i18n="legendSelected">
+                Selected
+              </span>
+
+            </span>
+
+
+            <span
+              class="legend-tip"
+              data-i18n="mapTip"
+            >
+              Each country opens its own support panel
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     COUNTRY DETAILS
+========================================================= -->
+
+<section
+  class="country-detail section"
+  id="countryDetails"
+>
+
+  <div class="container">
+
+    <div
+      class="detail-card"
+      id="detailCard"
+    >
+
+      <!-- EMPTY STATE -->
+
+      <div
+        id="countryEmpty"
+        class="empty-state"
+      >
+
+        <div class="empty-icon">
+          ✦
+        </div>
+
+        <span
+          class="kicker"
+          data-i18n="safetyKicker"
+        >
+          YOUR SAFETY MATTERS
+        </span>
+
+        <h2 data-i18n="selectCountry">
+          Select a country to begin.
+        </h2>
+
+        <p data-i18n="selectText">
+          Choose a country from the map or Quick Access
+          and ADALA will show emergency numbers,
+          support contacts and official resources.
+        </p>
+
+      </div>
+
+
+      <!-- DYNAMIC COUNTRY CONTENT -->
+
+      <div
+        id="countryDetailContent"
+        hidden
+      ></div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     THE LAW / RIGHTS
+========================================================= -->
+
+<section
+  class="rights section"
+  id="rights"
+>
+
+  <div class="container">
+
+    <div class="section-heading rights-heading">
+
+      <div>
+
+        <span
+          class="kicker"
+          data-i18n="lawKicker"
+        >
+          WOMEN’S RIGHTS · PLAIN LANGUAGE
+        </span>
+
+        <h2 data-i18n="lawTitle">
+          Understand your rights before you act.
+        </h2>
+
+        <p data-i18n="lawText">
+          Choose a topic and country to explore women’s rights in simple everyday language.
+          Lamar can help you find the right topic from your situation.
+        </p>
+
+      </div>
+
+
+      <div class="law-country-badge">
+
+        <span data-i18n="lawCountryLabel">
+          YOUR COUNTRY
+        </span>
+
+        <strong id="lawSelectedCountry">
+          Not selected
+        </strong>
+
+      </div>
+
+    </div>
+
+
+    <div class="law-shell">
+
+      <!-- LAW SIDEBAR -->
+
+      <aside class="law-sidebar">
+
+        <label class="search law-search">
+
+          <span>
+            ⌕
+          </span>
+
+          <input
+            id="lawSearch"
+            type="search"
+            data-i18n-placeholder="lawSearchPlaceholder"
+            placeholder="Search a right or topic..."
+          >
+
+        </label>
+
+
+        <div
+          class="law-topic-list"
+          id="lawTopicList"
+        ></div>
+
+      </aside>
+
+
+      <!-- LAW MAIN -->
+
+      <div class="law-main">
+
+        <div class="law-main-head">
+
+          <div>
+
+            <span
+              class="kicker"
+              data-i18n="lawGuideKicker"
+            >
+              RIGHTS GUIDE
+            </span>
+
+            <h3 id="lawMainTitle">
+              Choose a topic
+            </h3>
+
+            <p id="lawMainLead"></p>
+
+          </div>
+
+
+          <button
+            class="btn btn-secondary"
+            id="lawUseCountry"
+            type="button"
+            data-i18n="lawUseCountry"
+          >
+            Use chosen country
+          </button>
+
+        </div>
+
+
+        <div
+          id="lawResults"
+          class="law-results"
+        ></div>
+
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     TOOLKIT
+========================================================= -->
+
+<section class="tools section" id="tools">
+  <div class="container">
+    <div class="section-heading"><div><span class="kicker" data-i18n="toolKicker">YOUR TOOLKIT</span><h2 data-i18n="toolTitle">Your personal space to move forward.</h2><p data-i18n="toolText">Keep what matters together, build confidence, and test what you know about your rights.</p></div></div>
+    <div class="tool-goal"><span class="tool-goal-mark">✦</span><div><strong data-i18n="toolGoal">Where justice is a right, not a privilege.</strong><span data-i18n="toolGoalText">Every tool is designed to turn knowledge into something you can actually use.</span></div></div>
+    <div class="tool-grid toolkit-new-grid">
+      <article class="tool-card toolkit-card cabinet-card"><span class="tool-number">01</span><div class="tool-icon">📁</div><h3 data-i18n="cabinetTitle">Information Cabinet</h3><p data-i18n="cabinetText">Your private space for documents, screenshots, notes, contacts, checklists and case progress.</p><div class="cabinet-mini-progress"><div class="cabinet-progress-top"><span data-i18n="pathwayProgress">Your current pathway</span><strong id="toolkitProgressText">0 / 6</strong></div><div class="cabinet-progress-bar"><i id="toolkitProgressBar"></i></div></div><button class="text-button" id="cabinetButton" type="button"><span data-i18n="openCabinet">Open cabinet</span> →</button></article>
+      <article class="tool-card toolkit-card confidence-card"><span class="tool-number">02</span><div class="tool-icon">💜</div><h3 data-i18n="confidenceBuilderTitle">Confidence Builder</h3><p data-i18n="confidenceBuilderText">A living space for women’s worth, knowledge, voices, videos, books and statements.</p><div class="confidence-tags"><span>🎥</span><span>📚</span><span>💬</span></div><button class="text-button" id="confidenceBuilderButton" type="button"><span data-i18n="enterConfidence">Enter space</span> →</button></article>
+      <article class="tool-card toolkit-card knowledge-card"><span class="tool-number">03</span><div class="tool-icon">🧠</div><h3 data-i18n="knowledgeTestTitle">Rights Knowledge Test</h3><p data-i18n="knowledgeTestText">How well do you know your rights? Test yourself with short situations and learn as you go.</p><div class="quiz-mini"><span data-i18n="quizMini">10 questions · instant feedback</span></div><button class="text-button" id="knowledgeTestButton" type="button"><span data-i18n="startTest">Start test</span> →</button></article>
+    </div>
+  </div>
+</section>
+
+<section class="explore section" id="explore">
+  <div class="container">
+    <div class="section-heading explore-heading"><div><span class="kicker">EXPLORE ADALA</span><h2 data-i18n="exploreTitle">More than information. A way forward.</h2><p data-i18n="exploreText">Explore the tools that help you understand, prepare, find help and follow up without having to know legal terminology first.</p></div></div>
+    <div class="explore-feature-grid">
+      <button class="explore-feature" data-explore="rights">⚖️<strong data-i18n="exploreRights">Rights & Laws</strong><span data-i18n="exploreRightsText">Understand the laws relevant to you.</span></button>
+      <button class="explore-feature" data-explore="document">📄<strong data-i18n="exploreDocument">Explain a Document</strong><span data-i18n="exploreDocumentText">Paste confusing text and turn it into plain language.</span></button>
+      <button class="explore-feature" data-explore="where">🗺️<strong data-i18n="exploreWhere">Where Do I Go?</strong><span data-i18n="exploreWhereText">Find the institution or service relevant to your situation.</span></button>
+      <button class="explore-feature" data-explore="legal">👩‍⚖️<strong data-i18n="exploreLegal">Find Legal Help</strong><span data-i18n="exploreLegalText">Locate legal-aid and trusted support resources.</span></button>
+      <button class="explore-feature" data-explore="search">🔎<strong data-i18n="exploreSearch">Search Rights</strong><span data-i18n="exploreSearchText">Ask naturally instead of searching legal terminology.</span></button>
+      <button class="explore-feature" data-explore="missing">🧩<strong data-i18n="exploreMissing">What Am I Missing?</strong><span data-i18n="exploreMissingText">Check your situation for missing requirements and preparation steps.</span></button>
+      <button class="explore-feature" data-explore="translate">🌐<strong data-i18n="exploreTranslate">Translate & Explain</strong><span data-i18n="exploreTranslateText">Arabic ↔ English with a plain-language explanation.</span></button>
+      <button class="explore-feature" data-explore="followups">⏰<strong data-i18n="exploreFollowups">My Follow-Ups</strong><span data-i18n="exploreFollowupsText">Keep deadlines and next steps visible.</span></button>
+    </div>
+    <div class="explore-callout"><div><span class="kicker">THE BIG DIFFERENTIATOR</span><h3 data-i18n="exploreBigTitle">What should I do?</h3><p data-i18n="exploreBigText">You do not need to know the name of a law first. Start with what happened, and ADALA helps turn it into a clear pathway.</p></div><button class="btn btn-primary" id="exploreLamarButton" type="button"><span data-i18n="talkLamar">Talk to Lamar</span> →</button></div>
+    <div class="explore-reviews"><div><span class="kicker">EARLY PROTOTYPE REVIEWS</span><h3 data-i18n="reviewsTitle">What people could say about ADALA.</h3></div><div class="review-grid"><article><p data-i18n="reviewOne">“It finally feels like I can explain what happened without knowing the legal words first.”</p><span>— Prototype review</span></article><article><p data-i18n="reviewTwo">“I like that it gives me a next step instead of just giving me a page of information.”</p><span>— Prototype review</span></article><article><p data-i18n="reviewThree">“The country information and Lamar make the whole thing feel connected.”</p><span>— Prototype review</span></article></div></div>
+  </div>
+</section>
+
+<section class="lamar section" id="lamar">
+  <div class="container">
+    <div class="lamar-intro"><span class="kicker">ADALA ASSISTANT</span><h2 data-i18n="lamarTitle">Talk to Lamar.</h2><p data-i18n="lamarText">Tell her what happened in your own words. She asks the important questions, helps you understand the situation and builds a practical pathway.</p></div>
+    <div class="lamar-widget lamar-inline" id="lamarWidget" aria-hidden="false">
+      <div class="lamar-head"><div><strong>Lamar</strong><small>ADALA guide · here for you</small></div><button id="closeLamar" class="lamar-close" type="button" aria-label="Close Lamar chat" title="Close Lamar chat"><span>✕</span></button></div>
+      <div class="lamar-context" id="lamarContext"></div><div class="lamar-messages" id="lamarMessages"></div>
+      <div class="lamar-input"><input id="lamarInput" type="text" maxlength="800" placeholder="Ask Lamar..." autocomplete="off"><button id="lamarSend" type="button">→</button></div>
+    </div>
+  </div>
+</section>
+
+<section
+  class="resources section"
+  id="resources"
+>
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div>
+
+        <span
+          class="kicker"
+          data-i18n="resourceKicker"
+        >
+          TRUSTED INFORMATION
+        </span>
+
+        <h2 data-i18n="resourceTitle">
+          Start with the right resource.
+        </h2>
+
+      </div>
+
+      <p data-i18n="resourceText">
+        Use ADALA as a quick-access guide, then verify
+        important details with official national sources.
+      </p>
+
+    </div>
+
+
+    <div class="resource-grid">
+
+      <!-- EMERGENCY -->
+
+      <article class="resource-card purple">
+
+        <span>
+          ☎
+        </span>
+
+        <h3 data-i18n="emergencyHelp">
+          Emergency help
+        </h3>
+
+        <p data-i18n="emergencyHelpText">
+          Select a country to view its emergency numbers.
+        </p>
+
+        <a
+          href="#support"
+          data-i18n="findNumber"
+        >
+          Find a number →
+        </a>
+
+      </article>
+
+
+      <!-- OFFICIAL SOURCES -->
+
+      <article class="resource-card">
+
+        <span>
+          ↗
+        </span>
+
+        <h3 data-i18n="officialSources">
+          Official sources
+        </h3>
+
+        <p data-i18n="officialSourcesText">
+          Open national government resources from
+          the country panel.
+        </p>
+
+        <a
+          href="#support"
+          data-i18n="exploreSources"
+        >
+          Explore sources →
+        </a>
+
+      </article>
+
+
+      <!-- WELLBEING -->
+
+      <article class="resource-card">
+
+        <span>
+          ✦
+        </span>
+
+        <h3 data-i18n="wellbeing">
+          Personal wellbeing
+        </h3>
+
+        <p data-i18n="wellbeingText">
+          Use the toolkit to pause, reflect and reset.
+        </p>
+
+        <a
+          href="#tools"
+          data-i18n="openToolkit"
+        >
+          Open toolkit →
+        </a>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     ABOUT
+========================================================= -->
+
+<section
+  class="about section"
+  id="about"
+>
+
+  <div class="container about-card">
+
+    <div>
+
+      <span class="kicker">
+        ABOUT ADALA
+      </span>
+
+      <h2 data-i18n="aboutTitle">
+        A clearer path to support.
+      </h2>
+
+    </div>
+
+
+    <div>
+
+      <p data-i18n="aboutText">
+        ADALA is a digital support concept built around
+        one simple idea: important help should be easier
+        to find, understand and access.
+      </p>
+
+      <p
+        class="arabic-copy"
+        data-i18n="aboutArabic"
+      >
+        عدالة هي منصة رقمية تهدف إلى جعل الوصول إلى
+        الدعم والمعلومات الموثوقة أكثر وضوحًا وسهولة.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+  <div class="container footer-inner">
+
+    <div>
+
+      <strong>
+        ADALA
+      </strong>
+
+      <span>
+        Support. Guidance. Connection.
+      </span>
+
+    </div>
+
+
+    <div class="footer-links">
+
+      <a
+        href="#home"
+        data-i18n="navHome"
+      >
+        Home
+      </a>
+
+      <a
+        href="#support"
+        data-i18n="navSupport"
+      >
+        Find Support
+      </a>
+
+      <a
+        href="#tools"
+        data-i18n="navToolkit"
+      >
+        Toolkit
+      </a>
+
+      <a
+        href="#resources"
+        data-i18n="navResources"
+      >
+        Resources
+      </a>
+
+    </div>
+
+
+    <small>
+      © 2026 ADALA
+    </small>
+
+  </div>
+
+</footer>
+
+
+<!-- =========================================================
+     BREATHING MODAL
+========================================================= -->
+
+<div
+  class="modal"
+  id="calmModal"
+  aria-hidden="true"
+>
+
+  <div
+    class="modal-backdrop"
+    data-close-modal="calmModal"
+  ></div>
+
+
+  <div
+    class="modal-card calm-card"
+    role="dialog"
+    aria-modal="true"
+  >
+
+    <button
+      class="modal-close"
+      id="calmClose"
+      type="button"
+    >
+      ×
+    </button>
+
+
+    <span class="kicker">
+      ADALA
+    </span>
+
+    <h2 data-i18n="calmTitle">
+      Take a moment.
+    </h2>
+
+    <p data-i18n="calmText">
+      Follow the circle at your own comfortable pace.
+    </p>
+
+
+    <div class="breathing-area">
+
+      <div class="breathing-ring"></div>
+
+      <div
+        class="breathing-circle"
+        id="breathingCircle"
+      >
+
+        <span id="breathingText">
+          Breathe
+        </span>
+
+        <small id="breathingPhase">
+          Ready
+        </small>
+
+        <b id="breathingCount">
+          4
+        </b>
+
+      </div>
+
+    </div>
+
+
+    <div class="modal-actions">
+
+      <button
+        class="btn btn-primary"
+        id="calmBegin"
+        type="button"
+        data-i18n="begin"
+      >
+        Begin
+      </button>
+
+      <button
+        class="btn btn-ghost"
+        id="calmStop"
+        type="button"
+        data-i18n="stop"
+      >
+        Stop
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- =========================================================
+     COUNTRY MODAL
+========================================================= -->
+
+<div
+  class="modal"
+  id="countryModal"
+  aria-hidden="true"
+>
+
+  <div
+    class="modal-backdrop"
+    data-close-modal="countryModal"
+  ></div>
+
+
+  <div
+    class="modal-card country-modal-card"
+    role="dialog"
+    aria-modal="true"
+  >
+
+    <button
+      class="modal-close"
+      id="countryModalClose"
+      type="button"
+    >
+      ×
+    </button>
+
+    <div id="countryModalContent"></div>
+
+  </div>
+
+</div>
+
+
+<!-- =========================================================
+     TOOL MODAL
+========================================================= -->
+
+<div
+  class="modal"
+  id="toolModal"
+  aria-hidden="true"
+>
+
+  <div
+    class="modal-backdrop"
+    data-close-modal="toolModal"
+  ></div>
+
+
+  <div
+    class="modal-card tool-modal-card"
+    role="dialog"
+    aria-modal="true"
+  >
+
+    <button
+      class="modal-close"
+      id="toolModalClose"
+      type="button"
+    >
+      ×
+    </button>
+
+    <div id="toolModalContent"></div>
+
+  </div>
+
+</div>
+
+
+<!-- TOAST -->
+
+<div
+  class="toast"
+  id="toast"
+  role="status"
+  aria-live="polite"
+></div>
+
+
+<!-- JAVASCRIPT -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
